@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body.arid-page {
+  background-color: #e8f5ec;
+  color: #0b2f1a;
+}
+
+body.arid-page * {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.arid-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-align: left;
+  overflow: hidden;
+  margin-top: 0 !important;
+  padding-top: 100px;
+}
+
+.arid-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("../Arid-img/GambarArid2.jpg"); 
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.9);
+  z-index: -2;
+}
+
+.arid-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      to right,
+      rgba(92, 54, 16, 0.65),
+      rgba(166, 111, 37, 0.35)
+  );
+  z-index: -1;
+}
+
+.arid-hero-content {
+  max-width: 700px;
+}
+
+.arid-hero-label {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.78rem;
+  opacity: 0.9;
+}
+
+.arid-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.arid-hero-text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.arid-main {
+  background: linear-gradient(180deg, #e8f5ec, #f3ead7);
+  padding: 2.5rem 0 4rem;
+}
+
+.arid-main-inner {
+  max-width: 1100px;
+}
+
+.arid-card {
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: 1px solid #e2d2b0;
+  box-shadow: 0 8px 24px rgba(80, 52, 19, 0.18);
+  padding: 1.8rem;
+}
+
+.arid-list-card {
+  background: linear-gradient(135deg, #fff3d8, #f5e1b5);
+}
+
+.arid-list-title {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #5c3510;
+}
+
+.animal-filter {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-pill {
+  border: none;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  background-color: #c88a33;
+  color: #fffaf0;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.filter-pill:hover {
+  background-color: #e09f3f;
+  transform: translateY(-1px);
+}
+
+.filter-pill.active {
+  background-color: #ffe08a;
+  color: #5c3510;
+}
+
+.animal-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.animal-list-item {
+  padding: 0.6rem 0.8rem;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.animal-list-item + .animal-list-item {
+  margin-top: 0.25rem;
+}
+
+.animal-list-item:hover {
+  background-color: #f9e4be;
+  transform: translateY(-1px);
+}
+
+.animal-list-item.active {
+  background-color: #c88a33;
+  color: #fffaf0;
+}
+
+.animal-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.animal-latin {
+  font-size: 0.78rem;
+  opacity: 0.8;
+}
+
+.arid-detail-card {
+  background-color: #ffffff;
+}
+
+.animal-photo-wrapper {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.animal-photo {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.animal-detail-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #5c3510;
+}
+
+.animal-detail-latin {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #8a623b;
+}
+
+.animal-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.info-block {
+  font-size: 0.86rem;
+}
+
+.info-label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  color: #8a623b;
+  display: block;
+}
+
+.info-value {
+  font-weight: 500;
+  color: #4b2c0d;
+}
+
+.animal-description {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-top: 1.3rem;
+  color: #4b2c0d;
+}
+
+@media (max-width: 992px) {
+  .arid-hero {
+    height: auto;
+    padding: 6rem 0 2.5rem;
+  }
+
+  .arid-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .animal-photo {
+    height: 200px;
+  }
+
+  .animal-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
