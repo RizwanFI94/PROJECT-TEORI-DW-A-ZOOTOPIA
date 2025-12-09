@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body.aquatic-page {
+  background-color: #e6f7fb;
+  color: #03252f;
+}
+
+body.aquatic-page * {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.aquatic-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-align: left;
+  overflow: hidden;
+  margin-top: 0 !important;
+  padding-top: 100px;
+}
+
+.aquatic-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("../Aquatic-img/GambarAquatic.webp");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.9);
+  z-index: -2;
+}
+
+.aquatic-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      to right,
+      rgba(0, 55, 80, 0.7),
+      rgba(0, 137, 170, 0.4)
+  );
+  z-index: -1;
+}
+
+.aquatic-hero-content {
+  max-width: 700px;
+}
+
+.aquatic-hero-label {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.78rem;
+  opacity: 0.9;
+}
+
+.aquatic-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.aquatic-hero-text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.aquatic-main {
+  background: linear-gradient(180deg, #e6f7fb, #d7f1f7);
+  padding: 2.5rem 0 4rem;
+}
+
+.aquatic-main-inner {
+  max-width: 1100px;
+}
+
+.aquatic-card {
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: 1px solid #bfe3ef;
+  box-shadow: 0 8px 24px rgba(5, 53, 76, 0.18);
+  padding: 1.8rem;
+}
+
+.aquatic-list-card {
+  background: linear-gradient(135deg, #e2f8ff, #c3ecf6);
+}
+
+.aquatic-list-title {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #064159;
+}
+
+.animal-filter {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-pill {
+  border: none;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  background-color: #0c7ca3;
+  color: #f4fbff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.filter-pill:hover {
+  background-color: #0fa1d1;
+  transform: translateY(-1px);
+}
+
+.filter-pill.active {
+  background-color: #7be3ff;
+  color: #034257;
+}
+
+.animal-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.animal-list-item {
+  padding: 0.6rem 0.8rem;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.animal-list-item + .animal-list-item {
+  margin-top: 0.25rem;
+}
+
+.animal-list-item:hover {
+  background-color: #d4f1fb;
+  transform: translateY(-1px);
+}
+
+.animal-list-item.active {
+  background-color: #0c7ca3;
+  color: #f4fbff;
+}
+
+.animal-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.animal-latin {
+  font-size: 0.78rem;
+  opacity: 0.8;
+}
+
+.aquatic-detail-card {
+  background-color: #ffffff;
+}
+
+.animal-photo-wrapper {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.animal-photo {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.animal-detail-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #075774;
+}
+
+.animal-detail-latin {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #4c8195;
+}
+
+.animal-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.info-block {
+  font-size: 0.86rem;
+}
+
+.info-label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  color: #4c8195;
+  display: block;
+}
+
+.info-value {
+  font-weight: 500;
+  color: #074155;
+}
+
+.animal-description {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-top: 1.3rem;
+  color: #074155;
+}
+
+@media (max-width: 992px) {
+  .aquatic-hero {
+    height: auto;
+    padding: 6rem 0 2.5rem;
+  }
+
+  .aquatic-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .animal-photo {
+    height: 200px;
+  }
+
+  .animal-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
