@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aquatic Habitat - Zootopia</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style-page/style-aquatic.css">
+</head>
+<body class="aquatic-page">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">ZOOTOPIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Tropical.html">Tropical</a></li>
+           <li class="nav-item"><a class="nav-link" href="Arid.html">Arid</a></li>
+            <li class="nav-item"><a class="nav-link" href="Polar.html">Polar</a></li>
+             <li class="nav-item"><a class="nav-link" href="Aquatic.html">Aquatic</a></li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="aquatic-hero">
+    <div class="aquatic-hero-bg"></div>
+
+    <div class="aquatic-hero-content container">
+      <p class="aquatic-hero-label">HABITAT · AQUATIC</p>
+      <h1>Aquatic Habitat Animals</h1>
+      <p class="aquatic-hero-text">
+        Habitat akuatik mencakup sungai, danau, hingga laut dalam. Hewan-hewan seperti belut listrik,
+        piranha, marlin, dan ikan viper beradaptasi dengan arus air, tekanan yang tinggi, dan minimnya cahaya
+        di kedalaman tertentu.
+      </p>
+    </div>
+  </section>
+
+  <main class="aquatic-main">
+    <div class="container aquatic-main-inner">
+      <div class="row g-4">
+
+        <div class="col-lg-4">
+          <div class="aquatic-card aquatic-list-card">
+            <span class="aquatic-list-title">LIST ANIMALS</span>
+
+            <div class="animal-filter mt-3 mb-2">
+              <button class="filter-pill active" data-filter="all">All</button>
+              <button class="filter-pill" data-filter="predator">Predator</button>
+              <button class="filter-pill" data-filter="other">Others</button>
+            </div>
+
+            <ul class="animal-list" id="animalList">
+              <li class="animal-list-item active" data-animal="belutlistrik" data-type="predator">
+                <span class="animal-name">Belut Listrik</span>
+                <span class="animal-latin">Electrophorus electricus</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="piranha" data-type="predator">
+                <span class="animal-name">Piranha Gigi Hitam</span>
+                <span class="animal-latin">Serrasalmus rhombeus</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="marlin" data-type="predator">
+                <span class="animal-name">Marlin</span>
+                <span class="animal-latin">Makaira sp.</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="viper" data-type="predator">
+                <span class="animal-name">Ikan Viper</span>
+                <span class="animal-latin">Chauliodus sp.</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="candiru" data-type="other">
+                <span class="animal-name">Candiru</span>
+                <span class="animal-latin">Vandellia cirrhosa</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="aquatic-card aquatic-detail-card" id="animalDetail">
+            <div class="row g-3 align-items-center">
+              <div class="col-md-5">
+                <div class="animal-photo-wrapper">
+                  <img id="detailImage" class="animal-photo" src="Aquatic-img/BelutListrik.jpg" alt="Belut Listrik">
+                </div>
+              </div>
+
+              <div class="col-md-7">
+                <h2 id="detailName" class="animal-detail-name">Belut Listrik</h2>
+                <p id="detailLatin" class="animal-detail-latin">Electrophorus electricus</p>
+
+                <div class="animal-info-grid mt-3">
+                  <div><strong>Habitat:</strong> <span id="detailHabitat">Sungai berlumpur Amerika Selatan</span></div>
+                  <div><strong>Diet:</strong> <span id="detailDiet">Karnivora</span></div>
+                  <div><strong>Lifespan:</strong> <span id="detailLifespan">10–15 tahun</span></div>
+                  <div><strong>Size:</strong> <span id="detailSize">Hingga ±2,5 m</span></div>
+                  <div><strong>Category:</strong> <span id="detailCategory">Predator</span></div>
+                </div>
+              </div>
+            </div>
+
+            <p id="detailDescription" class="animal-description mt-4">
+              Belut listrik mampu menghasilkan listrik dengan tegangan tinggi untuk melumpuhkan mangsa
+              atau mempertahankan diri. Mereka hidup di perairan keruh dengan oksigen rendah dan sering
+              muncul ke permukaan untuk mengambil udara.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 bg-dark text-white mt-5">
+    <p class="m-0">© 2025 Zootopia · Aquatic Habitat Area</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script-page/script-aquatic.js"></script>
+</body>
+</html>
