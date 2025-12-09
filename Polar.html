@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polar Habitat - Zootopia</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style-page/style-polar.css">
+</head>
+<body class="polar-page">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">ZOOTOPIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Tropical.html">Tropical</a></li>
+           <li class="nav-item"><a class="nav-link" href="Arid.html">Arid</a></li>
+            <li class="nav-item"><a class="nav-link" href="Polar.html">Polar</a></li>
+             <li class="nav-item"><a class="nav-link" href="Aquatic.html">Aquatic</a></li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="polar-hero">
+    <div class="polar-hero-bg"></div>
+
+    <div class="polar-hero-content container">
+      <p class="polar-hero-label">HABITAT · POLAR</p>
+      <h1>Polar Habitat Animals</h1>
+      <p class="polar-hero-text">
+        Habitat kutub memiliki suhu sangat rendah, tertutup es dan salju hampir sepanjang tahun.
+        Hewan-hewan seperti beruang kutub, anjing laut, pinguin, dan paus memiliki adaptasi khusus
+        untuk bertahan hidup di air yang dingin dan lingkungan yang ekstrem.
+      </p>
+    </div>
+  </section>
+
+  <main class="polar-main">
+    <div class="container polar-main-inner">
+      <div class="row g-4">
+
+        <div class="col-lg-4">
+          <div class="polar-card polar-list-card">
+            <span class="polar-list-title">LIST ANIMALS</span>
+
+            <div class="animal-filter mt-3 mb-2">
+              <button class="filter-pill active" data-filter="all">All</button>
+              <button class="filter-pill" data-filter="mammal">Mammals</button>
+              <button class="filter-pill" data-filter="bird">Birds</button>
+            </div>
+
+            <ul class="animal-list" id="animalList">
+              <li class="animal-list-item active" data-animal="beruangkutub" data-type="mammal">
+                <span class="animal-name">Beruang Kutub</span>
+                <span class="animal-latin">Ursus maritimus</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="anjinglaut" data-type="mammal">
+                <span class="animal-name">Anjing Laut</span>
+                <span class="animal-latin">Phoca sp.</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="singaalut" data-type="mammal">
+                <span class="animal-name">Singa Laut</span>
+                <span class="animal-latin">Otariinae</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="lumbaputih" data-type="mammal">
+                <span class="animal-name">Lumba-lumba Putih</span>
+                <span class="animal-latin">Delphinapterus leucas</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="pausbiru" data-type="mammal">
+                <span class="animal-name">Paus Biru</span>
+                <span class="animal-latin">Balaenoptera musculus</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="pausorca" data-type="mammal">
+                <span class="animal-name">Paus Orca</span>
+                <span class="animal-latin">Orcinus orca</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="pauspunggung" data-type="mammal">
+                <span class="animal-name">Paus Punggung Bungkuk</span>
+                <span class="animal-latin">Megaptera novaeangliae</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="paussperm" data-type="mammal">
+                <span class="animal-name">Paus Sperma</span>
+                <span class="animal-latin">Physeter macrocephalus</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="pinguin" data-type="bird">
+                <span class="animal-name">Pinguin</span>
+                <span class="animal-latin">Aptenodytes sp.</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="bangausalju" data-type="bird">
+                <span class="animal-name">Bangau Salju</span>
+                <span class="animal-latin">Egretta thula</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="polar-card polar-detail-card" id="animalDetail">
+            <div class="row g-3 align-items-center">
+              <div class="col-md-5">
+                <div class="animal-photo-wrapper">
+                  <img id="detailImage" class="animal-photo" src="Polar-img/BeruangKutub.webp" alt="Beruang Kutub">
+                </div>
+              </div>
+
+              <div class="col-md-7">
+                <h2 id="detailName" class="animal-detail-name">Beruang Kutub</h2>
+                <p id="detailLatin" class="animal-detail-latin">Ursus maritimus</p>
+
+                <div class="animal-info-grid mt-3">
+                  <div><strong>Habitat:</strong> <span id="detailHabitat">Es laut & pantai kutub</span></div>
+                  <div><strong>Diet:</strong> <span id="detailDiet">Karnivora</span></div>
+                  <div><strong>Lifespan:</strong> <span id="detailLifespan">20–25 tahun</span></div>
+                  <div><strong>Size:</strong> <span id="detailSize">Hingga ±3 m</span></div>
+                  <div><strong>Category:</strong> <span id="detailCategory">Mammal</span></div>
+                </div>
+              </div>
+            </div>
+
+            <p id="detailDescription" class="animal-description mt-4">
+              Beruang kutub adalah predator puncak di kawasan Arktik. Bulu tebal dan lapisan lemak
+              yang tebal membantu menjaga suhu tubuh mereka tetap hangat di tengah suhu yang sangat dingin.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 bg-dark text-white mt-5">
+    <p class="m-0">© 2025 Zootopia · Polar Habitat Area</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script-page/script-polar.js"></script>
+</body>
+</html>

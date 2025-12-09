@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body.polar-page {
+  background-color: #e7f4fb;
+  color: #062438;
+}
+
+body.polar-page * {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.polar-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-align: left;
+  overflow: hidden;
+  margin-top: 0 !important;
+  padding-top: 100px;
+}
+
+.polar-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("../Polar-img/Gambarpolar.jpg"); 
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.9);
+  z-index: -2;
+}
+
+.polar-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      to right,
+      rgba(3, 35, 61, 0.7),
+      rgba(16, 92, 145, 0.4)
+  );
+  z-index: -1;
+}
+
+.polar-hero-content {
+  max-width: 700px;
+}
+
+.polar-hero-label {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.78rem;
+  opacity: 0.9;
+}
+
+.polar-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.polar-hero-text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.polar-main {
+  background: linear-gradient(180deg, #e7f4fb, #d9edf8);
+  padding: 2.5rem 0 4rem;
+}
+
+.polar-main-inner {
+  max-width: 1100px;
+}
+
+.polar-card {
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: 1px solid #c2dff1;
+  box-shadow: 0 8px 24px rgba(10, 51, 82, 0.18);
+  padding: 1.8rem;
+}
+
+.polar-list-card {
+  background: linear-gradient(135deg, #e5f4ff, #cfe7fa);
+}
+
+.polar-list-title {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #07314d;
+}
+
+.animal-filter {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-pill {
+  border: none;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  background-color: #1b7bb8;
+  color: #f4fbff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.filter-pill:hover {
+  background-color: #2193da;
+  transform: translateY(-1px);
+}
+
+.filter-pill.active {
+  background-color: #7ed3ff;
+  color: #053152;
+}
+
+.animal-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.animal-list-item {
+  padding: 0.6rem 0.8rem;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.animal-list-item + .animal-list-item {
+  margin-top: 0.25rem;
+}
+
+.animal-list-item:hover {
+  background-color: #d5ebfa;
+  transform: translateY(-1px);
+}
+
+.animal-list-item.active {
+  background-color: #1b7bb8;
+  color: #f4fbff;
+}
+
+.animal-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.animal-latin {
+  font-size: 0.78rem;
+  opacity: 0.8;
+}
+
+.polar-detail-card {
+  background-color: #ffffff;
+}
+
+.animal-photo-wrapper {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.animal-photo {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.animal-detail-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0b4971;
+}
+
+.animal-detail-latin {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #48769a;
+}
+
+.animal-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.info-block {
+  font-size: 0.86rem;
+}
+
+.info-label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  color: #48769a;
+  display: block;
+}
+
+.info-value {
+  font-weight: 500;
+  color: #123a57;
+}
+
+.animal-description {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-top: 1.3rem;
+  color: #123a57;
+}
+
+@media (max-width: 992px) {
+  .polar-hero {
+    height: auto;
+    padding: 6rem 0 2.5rem;
+  }
+
+  .polar-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .animal-photo {
+    height: 200px;
+  }
+
+  .animal-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
