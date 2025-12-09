@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arid Habitat - Zootopia</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style-page/style-arid.css">
+</head>
+<body class="arid-page">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">ZOOTOPIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Tropical.html">Tropical</a></li>
+           <li class="nav-item"><a class="nav-link" href="Arid.html">Arid</a></li>
+            <li class="nav-item"><a class="nav-link" href="Polar.html">Polar</a></li>
+             <li class="nav-item"><a class="nav-link" href="Aquatic.html">Aquatic</a></li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="arid-hero">
+    <div class="arid-hero-bg"></div>
+
+    <div class="arid-hero-content container">
+      <p class="arid-hero-label">HABITAT · ARID / DESERT</p>
+      <h1>Arid Habitat Animals</h1>
+      <p class="arid-hero-text">
+        Habitat arid atau kering meliputi gurun dan padang luas dengan curah hujan sangat sedikit.
+        Suhu siang hari bisa sangat panas, sedangkan malam hari menjadi dingin. Hewan-hewan di sini
+        memiliki adaptasi khusus untuk menghemat air, bertahan dari panas, dan mencari makanan
+        di lingkungan yang minim tumbuhan.
+      </p>
+    </div>
+  </section>
+
+  <main class="arid-main">
+    <div class="container arid-main-inner">
+      <div class="row g-4">
+
+        <div class="col-lg-4">
+          <div class="arid-card arid-list-card">
+            <span class="arid-list-title">LIST ANIMALS</span>
+
+            <div class="animal-filter mt-3 mb-2">
+              <button class="filter-pill active" data-filter="all">All</button>
+              <button class="filter-pill" data-filter="mammal">Mammals</button>
+              <button class="filter-pill" data-filter="bird">Birds</button>
+            </div>
+
+            <ul class="animal-list" id="animalList">
+              <li class="animal-list-item active" data-animal="unta" data-type="mammal">
+                <span class="animal-name">Unta</span>
+                <span class="animal-latin">Camelus sp.</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="onta" data-type="mammal">
+                <span class="animal-name">Onta</span>
+                <span class="animal-latin">Camelus sp.</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="badak" data-type="mammal">
+                <span class="animal-name">Badak Bercula Putih</span>
+                <span class="animal-latin">Ceratotherium simum</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="hyena" data-type="mammal">
+                <span class="animal-name">Hyena</span>
+                <span class="animal-latin">Crocuta crocuta</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="kangguru" data-type="mammal">
+                <span class="animal-name">Kangguru Merah</span>
+                <span class="animal-latin">Osphranter rufus</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="keledai" data-type="mammal">
+                <span class="animal-name">Keledai</span>
+                <span class="animal-latin">Equus asinus</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="domba" data-type="mammal">
+                <span class="animal-name">Domba</span>
+                <span class="animal-latin">Ovis aries</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="rusa" data-type="mammal">
+                <span class="animal-name">Rusa</span>
+                <span class="animal-latin">Cervus sp.</span>
+              </li>
+
+              <!-- Bird -->
+              <li class="animal-list-item" data-animal="emu" data-type="bird">
+                <span class="animal-name">Emu</span>
+                <span class="animal-latin">Dromaius novaehollandiae</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="arid-card arid-detail-card" id="animalDetail">
+            <div class="row g-3 align-items-center">
+              <div class="col-md-5">
+                <div class="animal-photo-wrapper">
+                  <img id="detailImage" class="animal-photo" src="Arid-img/Unta.webp" alt="Unta">
+                </div>
+              </div>
+
+              <div class="col-md-7">
+                <h2 id="detailName" class="animal-detail-name">Unta</h2>
+                <p id="detailLatin" class="animal-detail-latin">Camelus sp.</p>
+
+                <div class="animal-info-grid mt-3">
+                  <div>
+                    <strong>Habitat:</strong> <span id="detailHabitat">Gurun dan padang kering</span>
+                  </div>
+                  <div>
+                    <strong>Diet:</strong> <span id="detailDiet">Herbivora</span>
+                  </div>
+                  <div>
+                    <strong>Lifespan:</strong> <span id="detailLifespan">40–50 tahun</span>
+                  </div>
+                  <div>
+                    <strong>Size:</strong> <span id="detailSize">Hingga ±3 m</span>
+                  </div>
+                  <div>
+                    <strong>Category:</strong> <span id="detailCategory">Mammal</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p id="detailDescription" class="animal-description mt-4">
+              Unta adalah hewan yang sangat terkenal di habitat gurun. Mereka dapat
+              menyimpan cadangan energi dan air sehingga mampu berjalan jauh di bawah
+              terik matahari dengan sumber air yang sangat terbatas.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 bg-dark text-white mt-5">
+    <p class="m-0">© 2025 Zootopia · Arid Habitat Area</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script-page/script-arid.js"></script>
+</body>
+</html>
