@@ -175,5 +175,5 @@ filters.forEach(btn => {
   });
 });
 
-// set detail awal (beruang kutub)
+// set detail awal (beruang kutub) update
 updateDetail("beruangkutub");
