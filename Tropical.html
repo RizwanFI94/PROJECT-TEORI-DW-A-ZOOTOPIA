@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tropical Habitat - Zootopia</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style-page/style-tropical.css">
+</head>
+<body class="tropical-page">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">ZOOTOPIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Tropical.html">Tropical</a></li>
+           <li class="nav-item"><a class="nav-link" href="Arid.html">Arid</a></li>
+            <li class="nav-item"><a class="nav-link" href="Polar.html">Polar</a></li>
+             <li class="nav-item"><a class="nav-link" href="Aquatic.html">Aquatic</a></li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="tropical-hero">
+    <div class="tropical-hero-bg"></div>
+    <div class="tropical-hero-content container">
+      <p class="tropical-hero-label">HABITAT · TROPICAL RAINFOREST</p>
+      <h1>Rainforest Animals</h1>
+      <p class="tropical-hero-text">
+        Habitat tropis berada di wilayah beriklim hangat dengan curah hujan tinggi.
+        Hutan hujan, pepohonan rimbun, dan keanekaragaman hayati yang sangat tinggi
+        menjadi ciri utamanya. Banyak spesies seperti monyet, burung warna-warni,
+        harimau, dan reptil hidup di sini.
+      </p>
+    </div>
+  </section>
+
+  <main class="tropical-main">
+    <div class="container tropical-main-inner">
+      <div class="row g-4">
+
+        <div class="col-lg-4">
+          <div class="tropical-card tropical-list-card">
+            <span class="tropical-list-title">LIST ANIMALS</span>
+
+            <div class="animal-filter mt-3 mb-2">
+              <button class="filter-pill active" data-filter="all">All</button>
+              <button class="filter-pill" data-filter="mammal">Mammals</button>
+              <button class="filter-pill" data-filter="bird">Birds</button>
+            </div>
+
+            <ul class="animal-list" id="animalList">
+              <li class="animal-list-item active" data-animal="macan" data-type="mammal">
+                <span class="animal-name">Macan</span>
+                <span class="animal-latin">Panthera tigris</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="chetah" data-type="mammal">
+                <span class="animal-name">Cheetah</span>
+                <span class="animal-latin">Acinonyx jubatus</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="jaguar" data-type="mammal">
+                <span class="animal-name">Jaguar</span>
+                <span class="animal-latin">Panthera onca</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="koala" data-type="mammal">
+                <span class="animal-name">Koala</span>
+                <span class="animal-latin">Phascolarctos cinereus</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="komodo" data-type="mammal">
+                <span class="animal-name">Komodo Dragon</span>
+                <span class="animal-latin">Varanus komodoensis</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="kudanil" data-type="mammal">
+                <span class="animal-name">Kudanil (Hippo)</span>
+                <span class="animal-latin">Hippopotamus amphibius</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="burunggereja" data-type="bird">
+                <span class="animal-name">Burung Gereja</span>
+                <span class="animal-latin">Passer montanus</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="elang" data-type="bird">
+                <span class="animal-name">Elang</span>
+                <span class="animal-latin">Aquila sp.</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="falcon" data-type="bird">
+                <span class="animal-name">Falcon</span>
+                <span class="animal-latin">Falco sp.</span>
+              </li>
+
+              <li class="animal-list-item" data-animal="gagak" data-type="bird">
+                <span class="animal-name">Gagak</span>
+                <span class="animal-latin">Corvus sp.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="tropical-card tropical-detail-card" id="animalDetail">
+            <div class="row g-3 align-items-center">
+              <div class="col-md-5">
+                <div class="animal-photo-wrapper">
+                  <img id="detailImage" class="animal-photo" src="img/Macan.webp" alt="Macan">
+                </div>
+              </div>
+
+              <div class="col-md-7">
+                <h2 id="detailName" class="animal-detail-name">Macan</h2>
+                <p id="detailLatin" class="animal-detail-latin">Panthera tigris</p>
+
+                <div class="animal-info-grid mt-3">
+                  <div>
+                    <strong>Habitat:</strong> <span id="detailHabitat">Hutan tropis & hutan lebat</span>
+                  </div>
+                  <div>
+                    <strong>Diet:</strong> <span id="detailDiet">Karnivora</span>
+                  </div>
+                  <div>
+                    <strong>Lifespan:</strong> <span id="detailLifespan">10–15 tahun</span>
+                  </div>
+                  <div>
+                    <strong>Size:</strong> <span id="detailSize">Hingga ±3 m</span>
+                  </div>
+                  <div>
+                    <strong>Category:</strong> <span id="detailCategory">Mammal</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p id="detailDescription" class="animal-description mt-4">
+              Macan adalah kucing besar yang hidup menyendiri dan menjadi predator puncak
+              di hutan tropis. Pola loreng pada tubuhnya membantu berkamuflase di antara
+              pepohonan dan semak lebat saat mengintai mangsa.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 bg-dark text-white mt-5">
+    <p class="m-0">© 2025 Zootopia · Tropical Rainforest Area</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script-page/script-tropical.js"></script>
+</body>
+</html>
