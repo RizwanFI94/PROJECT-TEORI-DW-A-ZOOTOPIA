@@ -1,0 +1,338 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  padding-top: 70px; 
+  background: #e8f5ec;
+  color: #0f2a17;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+nav {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+section {
+  margin-top: 0 !important;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #0b2f1a, #145c32) !important;
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #f4fff7 !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #c4f2c7 !important;
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f4fff7;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("img/HeroHewan.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  z-index: -2;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 82, 45, 0.25);
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 700px;
+  padding: 0 1.5rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero .bold-text {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+}
+
+.btn-primary {
+  background-color: #1e7a3a;
+  border-color: #1e7a3a;
+  font-weight: 600;
+  padding: 0.6rem 1.6rem;
+  border-radius: 999px;
+}
+
+.btn-primary:hover {
+  background-color: #249349;
+  border-color: #249349;
+}
+
+.btn-outline-light {
+  border-radius: 999px;
+}
+
+#habitats h2 {
+  color: #0b2f1a;
+}
+
+.habitat-card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #c6e8cf;
+  box-shadow: 0 6px 18px rgba(9, 39, 21, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.habitat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(7, 31, 17, 0.35);
+}
+
+.habitat-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.habitat-card .card-body {
+  font-size: 0.95rem;
+}
+
+.habitat-title {
+  font-weight: 700;
+  color: #145c32;
+}
+
+#about {
+  background: linear-gradient(180deg, #e8f5ec, #d2eedc);
+}
+
+#about h2 {
+  color: #0b2f1a;
+}
+
+#about p {
+  font-size: 0.97rem;
+}
+
+#about img {
+  max-height: 330px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: none;
+}
+
+.team-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: #ecf8f0;
+}
+
+.team-section h2 {
+  color: #0b2f1a;
+}
+
+.team-card {
+  border-radius: 0.8rem;
+  background-color: #ffffff;
+  border: 1px solid #c6e8cf;
+  box-shadow: 0 5px 18px rgba(7, 31, 17, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 0.9rem;     
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 26px rgba(7, 31, 17, 0.3);
+}
+
+.team-img {
+  width: 70%;
+  max-width: 140px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 3px solid #1e7a3a;
+  margin: 0.9rem auto 0.4rem;
+  display: block;
+}
+
+.team-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #145c32;
+}
+
+.team-card .title {
+  font-size: 0.82rem;
+  color: #567c61;
+}
+
+.team-card p {
+  margin-bottom: 0.25rem;
+}
+
+.button {
+  background-color: #1e7a3a;
+  color: #ffffff;
+  border: none;
+  padding: 0.35rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.button:hover {
+  background-color: #249349;
+  transform: translateY(-1px);
+}
+
+.comment-section {
+  max-width: 800px;
+  margin: 2.5rem auto 3rem;
+  padding: 2rem 1.5rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: 1px solid #c6e8cf;
+  box-shadow: 0 8px 22px rgba(9, 39, 21, 0.16);
+}
+
+.comment-title {
+  text-align: center;
+  font-weight: 700;
+  color: #0b2f1a;
+  margin-bottom: 1.5rem;
+}
+
+.comment-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.comment-form label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #9fd6ad;
+  background-color: #f4fff7;
+  font-size: 0.95rem;
+}
+
+.comment-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.btn-submit {
+  background-color: #145c32;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.7rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+  background-color: #1e7a3a;
+  transform: translateY(-1px);
+}
+
+.comment-output {
+  margin-top: 1.3rem;
+}
+
+.comment-item {
+  border-top: 1px solid #d3ecd8;
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.comment-item:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.comment-item-name {
+  font-weight: 700;
+  color: #145c32;
+}
+
+.comment-item-email {
+  font-size: 0.85rem;
+  color: #557960;
+}
+
+.search-highlight {
+  outline: 3px solid #b7ffba;
+  outline-offset: 4px;
+}
+
+footer {
+  background: #0b2f1a !important;
+  color: #c4f2c7 !important;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 65vh;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero .bold-text {
+    font-size: 1rem;
+  }
+
+  .team-img {
+    max-width: 120px;
+  }
+}
