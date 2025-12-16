@@ -24,7 +24,9 @@ section {
 }
 
 .navbar {
-  background: linear-gradient(90deg, #0b2f1a, #145c32) !important;
+  background: linear-gradient(90deg, #43A047, #1B5E20) !important;
+  min-height: 60px;        
+  padding: 0.5rem 1.5rem;
 }
 
 .navbar-brand {
@@ -91,16 +93,16 @@ section {
 }
 
 .btn-primary {
-  background-color: #1e7a3a;
-  border-color: #1e7a3a;
+  background-color: #009B4D;
+  border-color: #009B4D;
   font-weight: 600;
   padding: 0.6rem 1.6rem;
   border-radius: 999px;
 }
 
 .btn-primary:hover {
-  background-color: #249349;
-  border-color: #249349;
+  background-color: #205A28;
+  border-color: #205A28;
 }
 
 .btn-outline-light {
@@ -108,7 +110,7 @@ section {
 }
 
 #habitats h2 {
-  color: #0b2f1a;
+  color: #009B4D;
 }
 
 .habitat-card {
@@ -136,7 +138,7 @@ section {
 
 .habitat-title {
   font-weight: 700;
-  color: #145c32;
+  color: #009B4D;
 }
 
 #about {
@@ -144,7 +146,7 @@ section {
 }
 
 #about h2 {
-  color: #0b2f1a;
+  color: #009B4D;
 }
 
 #about p {
@@ -166,7 +168,7 @@ section {
 }
 
 .team-section h2 {
-  color: #0b2f1a;
+  color: #009B4D;
 }
 
 .team-card {
@@ -197,7 +199,7 @@ section {
 .team-name {
   font-size: 1rem;
   font-weight: 700;
-  color: #145c32;
+  color: #009B4D;
 }
 
 .team-card .title {
@@ -210,7 +212,7 @@ section {
 }
 
 .button {
-  background-color: #1e7a3a;
+  background-color: #009B4D;
   color: #ffffff;
   border: none;
   padding: 0.35rem 1.1rem;
@@ -221,7 +223,7 @@ section {
 }
 
 .button:hover {
-  background-color: #249349;
+  background-color: #205A28;
   transform: translateY(-1px);
 }
 
@@ -238,7 +240,7 @@ section {
 .comment-title {
   text-align: center;
   font-weight: 700;
-  color: #0b2f1a;
+  color: #009B4D;
   margin-bottom: 1.5rem;
 }
 
@@ -268,7 +270,7 @@ section {
 }
 
 .btn-submit {
-  background-color: #145c32;
+  background-color: #009B4D;
   color: #ffffff;
   border: none;
   padding: 0.6rem 1.7rem;
@@ -335,4 +337,49 @@ footer {
   .team-img {
     max-width: 120px;
   }
+
+}
+
+/* SEARCH NAVBAR */
+#searchForm {
+  display: flex;
+}
+
+#searchInput {
+  border-radius: 999px 0 0 999px;
+  padding: 0.45rem 1rem;
+  border: 2px solid #FFC107;
+  border-right: none;
+  width: 230px;
+}
+
+.btn-search {
+  border-radius: 0 999px 999px 0;
+  padding: 0.45rem 1.2rem;
+  background: linear-gradient(135deg, #FFC107, #FF9800);
+  color: #2E2E2E;
+  font-weight: 700;
+  border: 2px solid #FFC107;
+}
+
+.btn-search:hover {
+  background: linear-gradient(135deg, #FFB300, #F57C00);
+}
+
+#searchInput:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.4);
+}
+
+/* ===============================
+   HIGHLIGHT SEARCH HABITAT CARD
+   =============================== */
+
+.habitat-highlight {
+  border: 4px solid #FF5722 !important;
+  background-color: #FFF3E0 !important;
+  box-shadow: 0 0 0 6px rgba(255, 87, 34, 0.45),
+              0 20px 40px rgba(0, 0, 0, 0.35) !important;
+  transform: scale(1.05);
+  z-index: 5;
 }
